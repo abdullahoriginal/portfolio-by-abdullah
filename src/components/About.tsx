@@ -24,7 +24,7 @@ export default function About() {
                 </div>
                 <div>
                   <h3 className="font-serif text-xl font-bold text-white">
-                    Mirza Abdullah Adil
+                    Abdullah A.
                   </h3>
                 </div>
               </div>
@@ -76,7 +76,6 @@ export default function About() {
                   Urdu (Native)
                 </span>
                 <span className="px-2 py-0.5 rounded bg-white/[0.03] text-[#b0b0b0]">
-                  Punjabi (Native)
                 </span>
               </div>
             </div>

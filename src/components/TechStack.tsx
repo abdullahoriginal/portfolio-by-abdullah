@@ -5,21 +5,66 @@ import {
   ShoppingCart,
   Palette,
   Bot,
+  Upload,
+  Truck,
 } from "lucide-react";
 
 export default function TechStack() {
   const categories = [
     {
+      name: "Amazon Catalog & Ads",
+      icon: Upload,
+      desc: "Bulk listing operations & advertising control",
+      items: [
+        "Amazon Bulk Listing Uploads",
+        "Amazon Ads Console",
+        "Listing Flat Files",
+        "Catalog Error Resolution",
+        "PPC Campaign Management",
+      ],
+    },
+    {
+      name: "Procurement & Supply Chain",
+      icon: Truck,
+      desc: "From product hunting to warehouse-ready shipments",
+      items: [
+        "Product Hunting & Procurement",
+        "Supplier Sourcing & RFQs",
+        "Overseas Shipping & Warehouse Routing",
+        "FBA Shipment Plans",
+        "Supplier Coordination",
+      ],
+    },
+    {
       name: "Languages & Frameworks",
       icon: Code2,
       desc: "Full-stack web & API development",
-      items: ["Python", "JavaScript (ES6+)", "React", "Next.js", "Flask", "Tailwind CSS"],
+      items: [
+        "Python",
+        "JavaScript (ES6+)",
+        "TypeScript",
+        "React",
+        "Next.js",
+        "Node.js",
+        "Flask",
+        "REST APIs",
+        "Tailwind CSS",
+      ],
     },
     {
       name: "E-Commerce & Marketplaces",
       icon: ShoppingCart,
-      desc: "Marketplace intelligence & ad scaling",
-      items: ["Amazon Ads Console", "Helium10", "Keepa", "Sellerboard", "Noon Partners Lab", "Seller Central (FBA)"],
+      desc: "Marketplace intelligence & operational scaling",
+      items: [
+        "Helium10",
+        "Keepa",
+        "Sellerboard",
+        "Noon Partners Lab",
+        "Seller Central (FBA)",
+        "Amazon Brand Analytics",
+        "Noon Ads Console",
+        "Inventory Forecasting",
+      ],
     },
     {
       name: "Design & Creative Suites",
@@ -31,12 +76,22 @@ export default function TechStack() {
       name: "Automation & Data Science",
       icon: Bot,
       desc: "Catalog scrapers & machine learning",
-      items: ["Playwright", "Selenium", "LightGBM", "Scikit-Learn", "Pandas & NumPy", "PostgreSQL / Git"],
+      items: [
+        "Playwright",
+        "Selenium",
+        "FastAPI",
+        "LightGBM",
+        "Scikit-Learn",
+        "Pandas & NumPy",
+        "SQL & PostgreSQL",
+        "GitHub Actions",
+        "PostgreSQL / Git",
+      ],
     },
   ];
 
   return (
-    <section id="tech-stack" className="py-16 relative bg-[#0a0a0a]">
+    <section id="tech-stack" className="-mt-8 pt-0 pb-16 relative bg-[#0a0a0a]">
       <div className="w-full max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16">
         <div className="text-center max-w-xl mx-auto mb-10">
           <span className="text-xs uppercase tracking-widest text-[#e63946] font-mono font-semibold">

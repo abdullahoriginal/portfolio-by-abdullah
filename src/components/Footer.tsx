@@ -8,7 +8,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-[#07070d] border-t border-white/5 py-12 relative overflow-hidden">
+    <footer className="bg-transparent border-t border-white/5 py-12 relative overflow-hidden">
       <div aria-hidden="true" className="flow-lines flow-lines-footer" />
       <div className="relative z-10 w-full max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8 pb-10 border-b border-white/5">
@@ -33,19 +33,8 @@ export default function Footer() {
           </button>
         </div>
 
-        {/* Bottom copyright row */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#b0b0b0]">
-          <div>
-            &copy; {new Date().getFullYear()} Mirza Abdullah Adil. All rights reserved.
-          </div>
-          <div className="flex items-center gap-2 font-mono">
-            <span>Domain:</span>
-            <span className="text-white hover:text-[#e63946] transition-colors">
-              builtbyabdullah.me
-            </span>
-            <span className="text-[#3a3a3a]">|</span>
-            <span>Hosted on Vercel</span>
-          </div>
+        <div className="pt-8 text-center text-xs text-[#b0b0b0]">
+          &copy; {new Date().getFullYear()} Abdullah A. All rights reserved.
         </div>
       </div>
     </footer>

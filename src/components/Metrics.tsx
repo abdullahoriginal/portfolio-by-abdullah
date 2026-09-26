@@ -26,7 +26,7 @@ export default function Metrics() {
       icon: MousePointerClick,
     },
     {
-      value: "10+",
+      value: "50+",
       unit: "",
       label: "Products Managed",
       desc: "Full lifecycle: sourcing, supplier logistics, FBA/FBN inventory, PPC",

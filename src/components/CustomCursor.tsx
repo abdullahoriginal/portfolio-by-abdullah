@@ -45,7 +45,13 @@ export default function CustomCursor() {
         target?.closest("input") ||
         target?.closest("textarea") ||
         target?.closest("select") ||
+        target?.closest("img") ||
+        target?.closest(".card-hover-glow") ||
+        target?.closest("[class*='rounded-xl']") ||
+        target?.closest("[class*='rounded-2xl']") ||
+        target?.closest("[class*='rounded-3xl']") ||
         target?.closest(".interactive-hover") ||
+        target?.closest("[data-cursor-hover]") ||
         target?.closest("[role='button']")
       ) {
         ring.classList.add("cursor-hover");

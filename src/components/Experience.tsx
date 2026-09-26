@@ -213,12 +213,6 @@ export default function Experience() {
             <span className="text-[#e63946] font-bold">
               {activeIndex === totalCards - 1 ? "✓ Final Milestone Reached" : `Milestone 0${activeIndex + 1} of 0${totalCards}`}
             </span>
-            <span className="text-zinc-600">•</span>
-            <span>
-              {activeIndex === totalCards - 1
-                ? "Scroll down to explore Technical & Creative Stack ↓"
-                : "Scroll down with mouse wheel to advance to next role →"}
-            </span>
           </div>
           <span className="text-zinc-500 hidden sm:inline">
             Vertical scroll resumes after Milestone 06
@@ -238,7 +232,7 @@ export default function Experience() {
                 key={index}
                 className="w-full shrink-0 px-2"
               >
-                <div className="card-hover-glow rounded-3xl bg-[#0f0f1a] border border-white/10 p-7 sm:p-10 md:p-12 shadow-2xl relative overflow-hidden">
+                <div className="experience-card card-hover-glow h-auto min-h-[300px] md:h-[300px] rounded-3xl bg-[#0f0f1a] border border-white/10 p-5 sm:p-6 md:p-7 shadow-2xl relative overflow-hidden">
                   {/* Subtle red accent glow in corner */}
                   <div className="pointer-events-none absolute -top-20 -right-20 w-64 h-64 bg-[#e63946]/10 rounded-full blur-3xl" />
 

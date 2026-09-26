@@ -1,6 +1,7 @@
 import CustomCursor from "@/components/CustomCursor";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import ProfileIntro from "@/components/ProfileIntro";
 import Metrics from "@/components/Metrics";
 import Services from "@/components/Services";
 import FeaturedWork from "@/components/FeaturedWork";
@@ -24,7 +25,10 @@ export default function Home() {
         {/* Section 2: Hero */}
         <Hero />
 
-        {/* Section 3: Key Metrics / Social Proof */}
+        {/* Section 3: Profile Introduction */}
+        <ProfileIntro />
+
+        {/* Section 4: Key Metrics / Social Proof */}
         <Metrics />
 
         {/* Section 4: What I Do / Services */}

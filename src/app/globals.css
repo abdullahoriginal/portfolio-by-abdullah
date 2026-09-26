@@ -9,6 +9,7 @@
   --color-text-secondary: #b0b0b0;
   --font-serif: var(--font-dm-serif), Georgia, serif;
   --font-sans: var(--font-dm-sans), system-ui, sans-serif;
+  --font-mono: var(--font-space-grotesk), ui-monospace, monospace;
 }
 
 :root {
@@ -44,6 +45,10 @@
   transform: translateY(-4px);
   border-color: rgba(230, 57, 70, 0.45);
   box-shadow: 0 12px 30px -10px rgba(230, 57, 70, 0.25);
+}
+
+.experience-card:hover {
+  transform: none;
 }
 
 /* Text glow */
@@ -117,6 +122,37 @@
 .flow-lines-footer {
   inset: 18% -12% -62%;
   opacity: 0.14;
+}
+
+.platform-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.1rem;
+  height: 1.1rem;
+  border: 1px solid currentColor;
+  border-radius: 0.25rem;
+  font-family: var(--font-space-grotesk), sans-serif;
+  font-size: 0.58rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.platform-mark-github {
+  border-radius: 999px;
+  font-size: 0.48rem;
+}
+
+.platform-mark-whatsapp {
+  padding: 0.1rem;
+  border: 0;
+  border-radius: 0;
+}
+
+.platform-mark-instagram {
+  border-radius: 0.35rem;
+  font-size: 0.5rem;
 }
 
 @keyframes flowLines {

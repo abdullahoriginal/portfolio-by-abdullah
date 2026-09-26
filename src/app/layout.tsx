@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { DM_Serif_Display, DM_Sans } from "next/font/google";
+import { DM_Serif_Display, DM_Sans, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 
 const dmSerif = DM_Serif_Display({
@@ -12,6 +12,12 @@ const dmSerif = DM_Serif_Display({
 const dmSans = DM_Sans({
   subsets: ["latin"],
   variable: "--font-dm-sans",
+  display: "swap",
+});
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-space-grotesk",
   display: "swap",
 });
 
@@ -45,7 +51,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${dmSerif.variable} ${dmSans.variable} scroll-smooth dark`}>
+    <html lang="en" className={`${dmSerif.variable} ${dmSans.variable} ${spaceGrotesk.variable} scroll-smooth dark`}>
       <body className="min-h-screen bg-[#0a0a0a] text-[#ffffff] font-sans antialiased selection:bg-[#e63946] selection:text-white">
         {children}
       </body>

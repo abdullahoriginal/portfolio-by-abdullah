@@ -26,20 +26,20 @@ export default function Hero() {
         </div>
 
         {/* Main Headline with refined letter spacing */}
-        <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.12] mb-3.5 tracking-[0.035em] max-w-5xl">
+        <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.12] mb-1 tracking-[0.035em] max-w-5xl">
           E-Commerce Specialist{" "}
           <span className="text-[#e63946] font-normal italic">×</span>{" "}
-          Graphic Designer
+          Amazon Creative Manager
         </h1>
 
         {/* High-Contrast, Perfectly Legible Subheading (eliminates the empty dark gap illusion) */}
-        <p className="max-w-3xl text-sm sm:text-base md:text-lg text-zinc-200 font-normal leading-relaxed mb-6">
+        <p className="max-w-3xl text-sm sm:text-base md:text-lg text-zinc-200 font-normal leading-relaxed mb-2">
           Building profitable marketplaces from product sourcing to high-converting A+ design.
           Full-stack Amazon &amp; Noon specialist combining visual architecture with data-driven advertising and custom automation.
         </p>
 
         {/* CTAs with tight, balanced vertical rhythm */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 w-full sm:w-auto mb-10">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 w-full sm:w-auto mb-7">
           <a
             href="#work"
             className="w-full sm:w-auto px-7 py-3.5 rounded-full bg-[#e63946] hover:bg-[#d62828] text-white font-semibold text-sm flex items-center justify-center gap-2.5 transition-all duration-200 shadow-[0_0_20px_rgba(230,57,70,0.4)] hover:shadow-[0_0_30px_rgba(230,57,70,0.65)] hover:-translate-y-0.5"

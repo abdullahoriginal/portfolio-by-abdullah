@@ -2,7 +2,7 @@
 
 > **Domain:** [builtbyabdullah.me](https://builtbyabdullah.me) | **Hosting:** Vercel | **Framework:** Next.js (App Router)
 
-A dark-theme portfolio website engineered for **Mirza Abdullah Adil** — full-stack e-commerce specialist and graphic designer.
+A dark-theme portfolio website engineered for **Abdullah A.** — full-stack e-commerce specialist and graphic designer.
 
 ---
 
@@ -22,7 +22,7 @@ A dark-theme portfolio website engineered for **Mirza Abdullah Adil** — full-s
 
 1. **Fixed Header / Navigation:** Logo, section anchors, "Let's Talk" CTA, and responsive mobile drawer.
 2. **Hero:** Signature headline, e-commerce value proposition, primary CTAs, and 3-pillar credibility ribbon.
-3. **Key Metrics / Social Proof:** 6 verified metric cards (130,000+ SAR Noon GMV, 136% ROI, +30% CTR, 10+ SKUs, 3+ Years, 3.52 CGPA).
+3. **Key Metrics / Social Proof:** 6 verified metric cards (130,000+ SAR Noon GMV, 136% ROI, +30% CTR, 30+ products, 3+ Years, end-to-end marketplace systems).
 4. **Services / What I Do:** 6 specialized capability cards with bullet deliverables and keyword taxonomy.
 5. **Featured Case Studies:**
    - *Case Study 1:* 136% ROI Noon Marketplace Growth (11K -> 130K+ SAR)
