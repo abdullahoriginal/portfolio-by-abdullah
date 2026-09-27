@@ -124,6 +124,29 @@
   opacity: 0.14;
 }
 
+.end-grid-surface {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: #0a0a0a;
+}
+
+.end-grid-surface::before {
+  position: absolute;
+  inset: -8% -12% -10%;
+  z-index: -1;
+  content: "";
+  opacity: 0.2;
+  transform: perspective(620px) rotateX(62deg) scale(1.35);
+  transform-origin: center top;
+  background-image:
+    linear-gradient(to right, rgba(230, 57, 70, 0.28) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.16) 1px, transparent 1px);
+  background-size: 72px 56px;
+  mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+  animation: flowLines 11s linear infinite;
+}
+
 .platform-mark {
   display: inline-flex;
   align-items: center;
@@ -176,4 +199,112 @@
 
 .pulse-red {
   animation: pulseGlow 3s infinite;
+}
+
+/* Isolated showcase-page presentation styles */
+.showcase-page {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.showcase-eyebrow {
+  color: #e63946;
+  font-family: var(--font-space-grotesk), sans-serif;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.showcase-intro {
+  position: relative;
+}
+
+.showcase-intro::before {
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  width: min(44rem, 90vw);
+  height: 20rem;
+  content: "";
+  background: radial-gradient(ellipse, rgba(230, 57, 70, 0.14), transparent 68%);
+  filter: blur(18px);
+  pointer-events: none;
+  transform: translateX(-50%);
+}
+
+.showcase-product {
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background:
+    radial-gradient(circle at 76% 50%, color-mix(in srgb, var(--showcase-accent) 14%, transparent), transparent 34%),
+    linear-gradient(135deg, #0a0a0a, #11111a 68%, color-mix(in srgb, var(--showcase-accent) 11%, #0a0a0a));
+}
+
+.showcase-main-image {
+  animation: showcaseFloat 8s ease-in-out infinite;
+}
+
+.showcase-support {
+  animation: showcaseDrift 6s ease-in-out infinite;
+  animation-delay: calc(var(--support-index, 0) * 120ms);
+  transition: transform 300ms ease, border-color 300ms ease, filter 300ms ease;
+}
+
+.showcase-support:hover {
+  z-index: 20;
+  border-color: var(--showcase-accent);
+  filter: brightness(1.15);
+  transform: scale(1.12) translateY(-8px);
+}
+
+.showcase-support-0 { left: 2%; top: 37%; --support-index: 0; }
+.showcase-support-1 { left: 14%; bottom: 8%; --support-index: 1; }
+.showcase-support-2 { right: 2%; top: 37%; --support-index: 2; }
+.showcase-support-3 { left: 40%; top: 1%; --support-index: 3; }
+.showcase-support-4 { right: 14%; bottom: 8%; --support-index: 4; }
+.showcase-support-5 { left: 40%; bottom: 0; --support-index: 5; }
+
+.showcase-ebc-card {
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  background: linear-gradient(145deg, rgba(15, 15, 26, 0.96), color-mix(in srgb, var(--showcase-accent) 8%, #0f0f1a));
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.24);
+  transition: border-color 300ms ease, transform 300ms ease, box-shadow 300ms ease;
+}
+
+.showcase-ebc-card:hover {
+  border-color: color-mix(in srgb, var(--showcase-accent) 65%, white 10%);
+  box-shadow: 0 22px 60px color-mix(in srgb, var(--showcase-accent) 16%, transparent);
+  transform: translateY(-4px);
+}
+
+@keyframes showcaseFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes showcaseDrift {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-6px) rotate(1deg); }
+}
+
+@media (max-width: 767px) {
+  .showcase-support-0 { left: 0; top: 38%; }
+  .showcase-support-1 { left: 7%; bottom: 7%; }
+  .showcase-support-2 { right: 0; top: 38%; }
+  .showcase-support-3 { left: 38%; top: 0; }
+  .showcase-support-4 { right: 7%; bottom: 7%; }
+  .showcase-support-5 { left: 38%; bottom: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .showcase-main-image,
+  .showcase-support {
+    animation: none;
+  }
 }

@@ -66,8 +66,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-16 relative bg-[#0a0a0a] border-t border-white/5 overflow-hidden">
-      <div aria-hidden="true" className="flow-lines" />
+    <section id="contact" className="relative z-10 overflow-hidden border-t border-white/5 bg-transparent py-16">
       <div className="relative z-10 w-full max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16">
         {/* Header */}
         <div className="text-center max-w-xl mx-auto mb-10">

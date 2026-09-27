@@ -26,16 +26,18 @@ export default function Hero() {
         </div>
 
         {/* Main Headline with refined letter spacing */}
-        <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.12] mb-1 tracking-[0.035em] max-w-5xl">
+        <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.12] mb-4 tracking-[0.035em] max-w-5xl">
           E-Commerce Specialist{" "}
           <span className="text-[#e63946] font-normal italic">×</span>{" "}
           Amazon Creative Manager
         </h1>
 
         {/* High-Contrast, Perfectly Legible Subheading (eliminates the empty dark gap illusion) */}
-        <p className="max-w-3xl text-sm sm:text-base md:text-lg text-zinc-200 font-normal leading-relaxed mb-2">
-          Building profitable marketplaces from product sourcing to high-converting A+ design.
-          Full-stack Amazon &amp; Noon specialist combining visual architecture with data-driven advertising and custom automation.
+        <p
+          className="max-w-2xl text-xs sm:text-sm md:text-base !text-white font-normal leading-relaxed mb-20"
+          style={{ color: "#ffffff" }}
+        >
+          Building profitable Amazon &amp; Noon marketplaces with A+ creative, data-led advertising, and smart automation.
         </p>
 
         {/* CTAs with tight, balanced vertical rhythm */}

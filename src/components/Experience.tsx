@@ -214,9 +214,6 @@ export default function Experience() {
               {activeIndex === totalCards - 1 ? "✓ Final Milestone Reached" : `Milestone 0${activeIndex + 1} of 0${totalCards}`}
             </span>
           </div>
-          <span className="text-zinc-500 hidden sm:inline">
-            Vertical scroll resumes after Milestone 06
-          </span>
         </div>
 
         {/* Horizontal Track Container */}

@@ -46,12 +46,14 @@ export default function Home() {
         {/* Section 8: About */}
         <About />
 
-        {/* Section 9: Contact */}
-        <Contact />
-      </main>
+        <div className="end-grid-surface">
+          {/* Section 9: Contact */}
+          <Contact />
 
-      {/* Section 10: Footer */}
-      <Footer />
+          {/* Section 10: Footer */}
+          <Footer />
+        </div>
+      </main>
     </div>
   );
 }
