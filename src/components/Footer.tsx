@@ -32,11 +32,11 @@ export default function Footer() {
               <ArrowUp className="h-4 w-4 transition-transform group-hover:-translate-y-0.5" />
             </button>
             <a
-              href="mailto:mirzaabdullahadil666@gmail.com"
+              href="mailto:hello@builtbyabdullah.me"
               className="inline-flex items-center gap-2 transition-colors hover:text-white"
             >
               <Mail className="h-3.5 w-3.5 text-[#e63946]" />
-              mirzaabdullahadil666@gmail.com
+              hello@builtbyabdullah.me
             </a>
           </div>
         </div>

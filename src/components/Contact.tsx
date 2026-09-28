@@ -91,7 +91,7 @@ export default function Contact() {
 
               <div className="space-y-2.5">
                 <a
-                  href="mailto:mirzaabdullahadil666@gmail.com"
+                  href="mailto:hello@builtbyabdullah.me"
                   className="flex items-center gap-3 p-3 rounded-xl bg-white/[0.02] border border-white/5 hover:border-[#e63946]/40 transition-colors group"
                 >
                   <div className="p-2 rounded-lg bg-[#e63946]/10 text-[#e63946] group-hover:scale-105 transition-transform">
@@ -100,7 +100,7 @@ export default function Contact() {
                   <div>
                     <span className="text-[10px] text-[#b0b0b0] block font-mono">Email</span>
                     <span className="text-xs font-semibold text-white group-hover:text-[#e63946] transition-colors break-all">
-                      mirzaabdullahadil666@gmail.com
+                      hello@builtbyabdullah.me
                     </span>
                   </div>
                 </a>
